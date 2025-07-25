@@ -22,7 +22,7 @@ export const Header = () => {
           <img className='py-3' src={hamburguer} alt="ícone de mais opções" onClick={Menu} />
         </button>
       </nav>
-      {showMenu && <div className=' bg-blue/96 h-screen flex flex-col fixed w-2/3 ml-30 px-3 gap-6 z-50' >
+      {showMenu && <div className=' bg-blue/96 h-screen flex flex-col fixed w-2/3 ml-45 px-3 gap-6 z-50' >
         <div className='flex gap-10 items-center'>
           <button>
             <img className='object-contain h-10 w-10' src={voltar} alt="botão de voltar" onClick={Menu}/>
