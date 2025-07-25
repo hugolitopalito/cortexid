@@ -1,15 +1,17 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 @theme{
     --color-whiteBg: #F5F7FA;
     --color-blue:#003566;
-    --color-light-nav:#C9D2E7;
+    --color-light-blue:#43749F;
+    --color-light-blue-nav:#C9D2E7;
     --color-dark-blue:#000814;
 
     --font-Oswald: 'Oswald', sans-serif;
     --font-Inter: 'Inter', sans-serif;
     --font-OpenSans: 'Open Sans', sans-serif;
+    --font-Roboto: 'Roboto', sans-serif;
 }
 

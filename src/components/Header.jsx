@@ -3,11 +3,9 @@ import hamburguer from '../assets/hamburguer.png'
 
 export const Header = () => {
   return (
-    <div>
-        <nav className='bg-light-nav flex justify-around items-center'>
-        <h1 className='font-Oswald font-bold'>CortexID</h1>
-        <img className='  w-auto h-auto max-w-50px max-h-50px' src={hamburguer} alt="ícone de mais opções" />
-      </nav>
-    </div>
+    <nav className='bg-light-blue-nav flex justify-between px items-center px-1 rem fixed w-full h-auto'>
+        <span className='font-Oswald font-bold text-2xl' >CortexID</span>
+        <img className='py-1' src={hamburguer} alt="ícone de mais opções" />
+    </nav>
   )
 }
