@@ -7,7 +7,9 @@
     --color-blue:#003566;
     --color-light-blue:#43749F;
     --color-light-blue-nav:#C9D2E7;
+
     --color-dark-blue:#000814;
+    --color-purple:#1C1C28;
 
     --font-Oswald: 'Oswald', sans-serif;
     --font-Inter: 'Inter', sans-serif;
@@ -15,3 +17,4 @@
     --font-Roboto: 'Roboto', sans-serif;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
