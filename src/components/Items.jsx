@@ -27,7 +27,7 @@ export const Items = () => {
         <img src={voltarEsquerda} alt="" />
       </button>
       <div className='w-full relative text-center'>
-        <h1 className='py-5 font-bold text-2xl text-dark-blue font-Open Sans'>{imagemAtual.name}</h1>
+        <h1 className='py-5 font-bold text-2xl text-dark-blue font-Open Sans'>{imagemAtual.name}Nome dele</h1>
         <img src={imagemAtual.image} className='bg-blue rounded-4xl'></img>
         <p className='py-5 font-Open Sans text-xl'>R${imagemAtual.price},00</p>
       </div>

@@ -8,7 +8,7 @@ export const HomeMain = () => {
             </div>
             <div>
             <h2 className='font-Open Sans font-bold text-blue w-3xs text-3xl'>Você reconhece todo mundo & eles não</h2>
-            <p className='font-Roboto justify-items-start mt-4 w-2xs'>Ajude a devolver rostos às memórias.
+            <p className='font-Roboto justify-items-start mt-4 w-xs text-lg'>Ajude a devolver rostos às memórias.
                 Milhões de pessoas vivem com prosopagnosia, a “cegueira facial”.
                 Elas não reconhecem rostos — nem de amigos, nem da própria família.
                 Para elas, cada encontro é um primeiro encontro

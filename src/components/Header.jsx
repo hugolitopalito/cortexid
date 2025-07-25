@@ -16,13 +16,13 @@ export const Header = () => {
   }
   return (
     <div className='w-xl'>
-      <nav className='bg-light-blue-nav flex justify-between items-center px-1 fixed w-full h-auto z-50'>
+      <nav className='bg-light-blue-nav flex justify-between items-center px-2 fixed w-full h-auto z-50'>
         <span className='font-Oswald font-bold text-3xl' >CortexID</span>
         <button>
-          <img className='py-1' src={hamburguer} alt="ícone de mais opções" onClick={Menu} />
+          <img className='py-3' src={hamburguer} alt="ícone de mais opções" onClick={Menu} />
         </button>
       </nav>
-      {showMenu && <div className=' bg-black h-screen flex flex-col fixed w-2/3 ml-30 px-3 gap-6 z-50' >
+      {showMenu && <div className=' bg-blue/96 h-screen flex flex-col fixed w-2/3 ml-30 px-3 gap-6 z-50' >
         <div className='flex gap-10 items-center'>
           <button>
             <img className='object-contain h-10 w-10' src={voltar} alt="botão de voltar" onClick={Menu}/>
