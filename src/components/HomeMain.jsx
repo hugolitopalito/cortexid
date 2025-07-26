@@ -2,8 +2,8 @@ import React from 'react'
 import chapeu from '../assets/chapeu.png'
 export const HomeMain = () => {
     return (
-        <div className='px-3 pt-5'>
-            <div className='flex justify-center'>
+        <div className='flex justify-center items-center flex-col pt-20'>
+            <div className='justify-center rounded-full w-3xs h-3xs drop-shadow-blue drop-shadow-2xl/70'>
             <img className='' src={chapeu} alt="Imagem do chapéu" />
             </div>
             <div>
@@ -16,7 +16,7 @@ export const HomeMain = () => {
             </div>
             <div className='flex justify-center pt-10'>
             <button className='font-Open Sans font-bold  bg-blue rounded-full w-3xs p-2 '>
-            <a href="" className='text-white text-center text-xl'>Saiba mais</a>
+            <a href="" className='text-white text-center text-2xl'>Saiba mais</a>
             </button>
             </div>
         </div>

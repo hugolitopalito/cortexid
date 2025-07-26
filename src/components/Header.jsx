@@ -22,16 +22,16 @@ export const Header = () => {
           <img className='py-3' src={hamburguer} alt="ícone de mais opções" onClick={Menu} />
         </button>
       </nav>
-      {showMenu && <div className=' bg-blue/96 h-screen flex flex-col fixed w-2/3 ml-45 px-3 gap-6 z-50' >
-        <div className='flex gap-10 items-center'>
-          <button>
-            <img className='object-contain h-10 w-10' src={voltar} alt="botão de voltar" onClick={Menu}/>
+      {showMenu && <div className='w-1/2 bg-blue/96 h-screen fixed right-0 z-50' >
+        <div className='flex justify-between pb-5'>
+          <button >
+            <img className='object-contain h-10 w-20' src={voltar} alt="botão de voltar" onClick={Menu}/>
           </button>
           <button>
-            <img className='object-contain h-20 w-20' src={modoClaroMobile} alt="botão de alterar tema" />
+            <img className='object-contain h-20 w-25' src={modoClaroMobile} alt="botão de alterar tema" />
           </button>
         </div>
-        <div className='flex flex-col text-whiteBg gap-6 text-Open Sans font-bold px-3 text-xl'>
+        <div className='flex flex-col text-whiteBg gap-10 text-Open Sans font-bold px-5 text-xl'>
           <span>Items</span>
           <span>Tutorial</span>
           <span>Contato</span>

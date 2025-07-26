@@ -4,7 +4,7 @@ import { HomeMain } from './HomeMain'
 
 export const Home = () => {
   return (
-    <div className="h-screen mb-10">
+    <div className="h-screen mb-15">
       <Header/>
       <HomeMain />
     </div>

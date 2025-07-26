@@ -2,8 +2,8 @@ import React from 'react'
 import { Home } from './components/Home'
 import { Items } from './components/Items'
 import { Cadatro } from './components/Cadastro'
-
 import './index.css'
+
 
 export const App = () => {
   return (

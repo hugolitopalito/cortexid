@@ -22,11 +22,11 @@ export const Items = () => {
 
 
   return (
-    <div className="h-screen flex items-center justify-center ">
+    <div className="h-screen flex items-center justify-center mt-25">
       <button className='flex h-auto w-auto' onClick={imagemAnterior}>
         <img src={voltarEsquerda} alt="" />
       </button>
-      <div className='w-full relative text-center'>
+      <div className='w-full relative text-center w-xs'>
         <h1 className='py-5 font-bold text-2xl text-dark-blue font-Open Sans'>{imagemAtual.name}Nome dele</h1>
         <img src={imagemAtual.image} className='bg-blue rounded-4xl'></img>
         <p className='py-5 font-Open Sans text-xl'>R${imagemAtual.price},00</p>
