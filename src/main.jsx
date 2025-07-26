@@ -6,7 +6,7 @@ import {createBrowserRouter, RouterProvider, Router} from "react-router-dom"
 import {App} from './App.jsx'
 import { Cadatro } from './components/Cadastro.jsx'
 import { ErrorPage } from './components/ErrorPage.jsx'
-
+import { Login } from './components/Login.jsx'
 
 const router = createBrowserRouter([
   {
@@ -17,6 +17,10 @@ const router = createBrowserRouter([
   {
     path:'cadastro',
     element: <Cadatro/>
+  },
+  {
+    path:'login',
+    element: <Login/>
   },
 ])
 

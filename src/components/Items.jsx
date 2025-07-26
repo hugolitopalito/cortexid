@@ -22,7 +22,7 @@ export const Items = () => {
 
 
   return (
-    <div className="h-screen flex items-center justify-center mt-25">
+    <div className="h-screen flex items-center justify-center">
       <button className='flex h-auto w-auto' onClick={imagemAnterior}>
         <img src={voltarEsquerda} alt="" />
       </button>

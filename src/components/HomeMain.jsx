@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import chapeu from '../assets/chapeu.png'
 export const HomeMain = () => {
     return (
@@ -16,7 +17,8 @@ export const HomeMain = () => {
             </div>
             <div className='flex justify-center pt-10'>
             <button className='font-Open Sans font-bold  bg-blue rounded-full w-3xs p-2 '>
-            <a href="" className='text-white text-center text-2xl'>Saiba mais</a>
+            
+            <Link to="/login" className='text-white text-center text-2xl'>Saiba Mais</Link>
             </button>
             </div>
         </div>

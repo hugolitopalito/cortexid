@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import hamburguer from '../assets/hamburguer.png'
 import voltar from '../assets/voltar.png'
 import modoClaroMobile from '../assets/modoClaroMobile.png'
@@ -16,8 +17,8 @@ export const Header = () => {
   }
   return (
     <div className='w-xl'>
-      <nav className='bg-light-blue-nav flex justify-between items-center px-2 fixed w-full h-auto z-50'>
-        <span className='font-Oswald font-bold text-3xl' >CortexID</span>
+      <nav className='bg-light-blue-nav flex justify-between items-center px-2 fixed w-full h-auto z-50'> 
+        <Link to="/" ><span className='font-Oswald font-bold text-3xl' >CortexID</span></Link>
         <button>
           <img className='py-3' src={hamburguer} alt="ícone de mais opções" onClick={Menu} />
         </button>
@@ -37,6 +38,7 @@ export const Header = () => {
           <span>Contato</span>
           <span>Referência</span>
           <span>Jogo</span>
+          <span>Conta</span>
         </div>
       </div>}
     </div>
