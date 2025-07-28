@@ -34,8 +34,8 @@ export const Header = () => {
         </div>
         <div className='flex flex-col text-whiteBg gap-10 text-Open Sans font-bold px-5 text-xl'>
           <Link to="/itens"><span>Items</span></Link>
-          <Link> <span>Tutorial</span></Link>
-          <Link><span>Contato</span></Link>
+          <Link to='/tutorial'> <span>Tutorial</span></Link>
+          <Link to='/contato'><span>Contato</span></Link>
           <Link><span>Referência</span></Link>
           <Link><span>Jogo</span></Link>
           <Link><span>Conta</span></Link>

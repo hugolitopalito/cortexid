@@ -1,10 +1,8 @@
-import React from 'react'
 import {Header} from './Header'
 import { imagemData } from '../data/imagemData'
 import { useState } from "react";
 import voltarDireita from '../assets/voltarDireita.png'
 import voltarEsquerda from '../assets/voltarEsquerda.png'
-import { div } from 'framer-motion/client';
 
 export const Items = () => {
   const [indice, setIndice] = useState(0)

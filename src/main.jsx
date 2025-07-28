@@ -9,6 +9,7 @@ import { ErrorPage } from './components/ErrorPage.jsx'
 import { Login } from './components/Login.jsx'
 import { Items } from './components/Items.jsx'
 import { Tutorial } from './components/Tutorial.jsx'
+import { Contato } from './components/Contato.jsx'
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path:'tutorial',
     element: <Tutorial/>
+  },
+  {
+    path:'contato',
+    element: <Contato/>
   },
 ])
 
