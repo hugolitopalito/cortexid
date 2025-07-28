@@ -7,6 +7,8 @@ import {App} from './App.jsx'
 import { Cadatro } from './components/Cadastro.jsx'
 import { ErrorPage } from './components/ErrorPage.jsx'
 import { Login } from './components/Login.jsx'
+import { Items } from './components/Items.jsx'
+import { Tutorial } from './components/Tutorial.jsx'
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,14 @@ const router = createBrowserRouter([
   {
     path:'login',
     element: <Login/>
+  },
+  {
+    path:'itens',
+    element: <Items/>
+  },
+  {
+    path:'tutorial',
+    element: <Tutorial/>
   },
 ])
 

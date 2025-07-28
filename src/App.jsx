@@ -10,7 +10,6 @@ export const App = () => {
     <div className='bg-whiteBg '>
       <meta className="viewport" content="width=device-width, initial-scale=1.0" />
       <Home/>
-      <Items/>
     </div>
   )
 }
