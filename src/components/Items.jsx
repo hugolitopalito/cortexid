@@ -26,9 +26,9 @@ export const Items = () => {
           <img src={voltarEsquerda} alt="" />
         </button>
         <div className='w-full relative text-center w-xs'>
-          <h1 className='py-5 font-bold text-2xl text-dark-blue font-Open Sans'>{imagemAtual.name}Nome dele</h1>
+          <h1 className='py-5 font-bold text-2xl text-dark-blue font-OpenSans'>{imagemAtual.name}Nome dele</h1>
           <img src={imagemAtual.image} className='bg-blue rounded-4xl'></img>
-          <p className='py-5 font-Open Sans text-xl'>R${imagemAtual.price},00</p>
+          <p className='py-5 font-OpenSans text-xl'>R${imagemAtual.price},00</p>
         </div>
         <button className='h-auto w-auto ' onClick={proximaImagem}>
           <img src={voltarDireita} alt="" />

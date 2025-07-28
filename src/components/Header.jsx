@@ -36,8 +36,8 @@ export const Header = () => {
           <Link to="/itens"><span>Items</span></Link>
           <Link to='/tutorial'> <span>Tutorial</span></Link>
           <Link to='/contato'><span>Contato</span></Link>
-          <Link><span>Referência</span></Link>
-          <Link><span>Jogo</span></Link>
+          <Link to='/referencias'><span>Referência</span></Link>
+          <Link to='/jogo'><span>Jogo</span></Link>
           <Link><span>Conta</span></Link>
         </div>
       </div>}

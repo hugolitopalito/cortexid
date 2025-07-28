@@ -28,7 +28,7 @@ export const Cadatro = () => {
             <input type="" placeholder='Imagem de perfil' className='outline-none'/>
           </div>
           <div className='pt-5 gap-3'>
-            <button className='bg-whiteBg text-blue font-bold text-xl font-Open Sans rounded-full px-20 py-4 justify-content'>
+            <button className='bg-whiteBg text-blue font-bold text-xl font-OpenSans rounded-full px-20 py-4 justify-content'>
               <Link to='/' ><input type="submit" value="Cadastrar" /></Link>
             </button>
           </div>

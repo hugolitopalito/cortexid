@@ -10,6 +10,8 @@ import { Login } from './components/Login.jsx'
 import { Items } from './components/Items.jsx'
 import { Tutorial } from './components/Tutorial.jsx'
 import { Contato } from './components/Contato.jsx'
+import { Referencias } from './components/Referencias.jsx'
+import { Jogo } from './components/Jogo.jsx'
 
 const router = createBrowserRouter([
   {
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
   {
     path:'contato',
     element: <Contato/>
+  },
+  {
+    path:'referencias',
+    element: <Referencias/>
+  },
+  {
+    path:'jogo',
+    element: <Jogo/>
   },
 ])
 
