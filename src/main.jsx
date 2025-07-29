@@ -12,6 +12,7 @@ import { Tutorial } from './components/Tutorial.jsx'
 import { Contato } from './components/Contato.jsx'
 import { Referencias } from './components/Referencias.jsx'
 import { Jogo } from './components/Jogo.jsx'
+import { Conta } from './components/Conta.jsx'
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,11 @@ const router = createBrowserRouter([
     path:'jogo',
     element: <Jogo/>
   },
+  {
+    path:'conta',
+    element: <Conta/>
+  },
+
 ])
 
 createRoot(document.getElementById('root')).render(
