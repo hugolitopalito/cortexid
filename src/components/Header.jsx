@@ -29,7 +29,7 @@ export const Header = () => {
       <nav className='bg-light-blue-nav flex justify-between items-center px-4 fixed w-full h-auto z-50 dark:bg-dark-blue'>
         <Link to="/" ><span className='font-Oswald font-bold text-3xl dark:text-whiteBg md:text-5xl' >CortexID</span></Link>
         {isMobile == true ? <button>
-          <img className='py-3' src={tema == 'dark' ? hamburguerBranco : hamburguer} alt="ícone de mais opções" onClick={Menu} />
+          <img className='py-3 cursor-pointer' src={tema == 'dark' ? hamburguerBranco : hamburguer} alt="ícone de mais opções" onClick={Menu} />
         </button> : <div className='flex items-center gap-30 justify-between'>
          <div className='flex gap-20 font-bold text-2xl font-OpenSans'>
          <NavLink to="/itens" className={({isActive})=>isActive ? 'text-blue dark:text-light-blue' : 'dark:text-whiteBg'}><span>Items</span></NavLink>
@@ -39,7 +39,7 @@ export const Header = () => {
           <NavLink to='/jogo' className={({isActive})=>isActive ? 'text-blue dark:text-light-blue' : 'dark:text-whiteBg'}><span>Jogo</span></NavLink>
           <NavLink to='/conta' className={({isActive})=>isActive ? 'text-blue dark:text-light-blue' : 'dark:text-whiteBg'}><span>Conta</span></NavLink>
          </div>
-          <img className='object-contain h-20 w-25' src={tema == 'dark' ? modoEscuroMobile : modoClaroMobile} alt="botão de alterar tema" onClick={alternarTema} />
+          <img className='object-contain h-20 w-25 cursor-pointer' src={tema == 'dark' ? modoEscuroMobile : modoClaroMobile} alt="botão de alterar tema" onClick={alternarTema} />
         </div>}
       </nav>
       {showMenu && isMobile && <div className='w-1/2 bg-blue/96 h-screen fixed right-0 z-50 dark:bg-light-blue/96' >
@@ -48,7 +48,7 @@ export const Header = () => {
             <img className='object-contain h-10 w-20' src={voltar} alt="botão de voltar" onClick={Menu} />
           </button>
           <button>
-            <img className='object-contain h-20 w-25' src={tema == 'dark' ? modoEscuroMobile : modoClaroMobile} alt="botão de alterar tema" onClick={alternarTema} />
+            <img className='object-contain h-20 w-25 cursor-pointer' src={tema == 'dark' ? modoEscuroMobile : modoClaroMobile} alt="botão de alterar tema" onClick={alternarTema} />
           </button>
         </div>
         <div className='flex flex-col text-whiteBg gap-10 text-Open Sans font-bold px-5 text-xl'>

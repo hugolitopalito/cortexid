@@ -28,7 +28,7 @@ export const Items = () => {
     <div data-theme={tema}>
       <Header />
       <div className="h-screen flex items-center justify-center bg-whiteBg dark:bg-purple">
-        <button className='flex h-auto w-auto' onClick={imagemAnterior}>
+        <button className='flex h-auto w-auto cursor-pointer' onClick={imagemAnterior}>
           <img src={tema == 'dark' ? voltarEsquerdaBranco : voltarEsquerda} alt="" />
         </button>
         <div className='w-full relative text-center w-xs'>
@@ -36,7 +36,7 @@ export const Items = () => {
           <img src={imagemAtual.image} className='bg-blue rounded-4xl dark:bg-whiteBg'></img>
           <p className='py-5 font-OpenSans text-xl dark:text-whiteBg'>R${imagemAtual.price},00</p>
         </div>
-        <button className='h-auto w-auto' onClick={proximaImagem}>
+        <button className='h-auto w-auto cursor-pointer' onClick={proximaImagem}>
           <img src={tema == 'dark' ? voltarDireitaBranco : voltarDireita} alt="" />
         </button>
       </div>
