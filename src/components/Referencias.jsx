@@ -1,35 +1,54 @@
 import { useState } from 'react'
 import { Header } from './Header'
 import instalar from '../assets/Download.png'
+import { useTema } from '../context/ThemeContext'
 
 export const Referencias = () => {
+
+  const {tema} = useTema()
+
   return (
-    <div>
+    <div data-theme={tema}>
       <Header />
-      <div className='flex flex-col justify-center items-center'>
-        <h1 className='font-bold font-Open Sans text-4xl text-center mt-25'>Referências</h1>
-        <div className='items-center justify-center mt-10 w-xs'>
-          <div className='flex '>
-            <h2 className='font-bold text-lg'>Prosopagnosia após ferimento por arma de fogo</h2>
-            <button className='bg-light-blue w-30 h-8 flex justify-center items-center rounded-4xl mt-4'><img src={instalar} alt="" /></button>
+      <div className='flex flex-col justify-center items-center dark:bg-purple h-screen'>
+        <div className='px-4'>
+          <h1 className='font-bold font-OpenSans text-4xl text-center mt-20 dark:text-whiteBg'>Referências</h1>
+          <div className='mt-10 dark:text-whiteBg'>
+            <div>
+              <h2 className='font-bold text-lg items-center max-w-md break-words'>Prosopagnosia após ferimento por arma de fogo</h2>
+            </div>
+            <div className='mt-2'>
+              <a href="https://www.thieme-connect.com/products/ejournals/pdf/10.1055/s-0038-1623044.pdf" className='block break-all underline'>https://www.thieme-connect.com/products/ejournals/pdf/10.1055/s-0038-1623044.pdf</a>
+            </div>
+            <div className='mt-4'>
+              <button className='bg-light-blue flex  rounded-4xl py-1 px-5'><img src={instalar} alt="" className='h-6 w-8' /></button>
+            </div>
           </div>
-          <a href="https://www.thieme-connect.com/products/ejournals/pdf/10.1055/s-0038-1623044.pdf">https://www.thieme-connect.com/products/ejournals/pdf/10.1055/s-0038-1623044.pdf</a>
-        </div>
-        <div className='items-center justify-center mt-10 w-xs'>
-          <div className='flex items-center justify-between'>
-            <h2 className='font-bold text-lg'>Congenital prosopagnosia</h2>
-            <button className='bg-light-blue w-18 h-8 flex justify-center items-center rounded-4xl mt-4'><img src={instalar} alt="" /></button>
+          <div className='mt-10 dark:text-whiteBg'>
+            <div>
+              <h2 className='font-bold text-lg items-center max-w-md break-words'>Congenital prosopagnosia</h2>
+            </div>
+            <div className='mt-2'>
+              <a href="https://www.scielo.br/j/dn/a/Ncsxn5BQRvYqKCXRMrDVxcH/?format=pdf&lang=en" className='block break-all underline'>https://www.scielo.br/j/dn/a/Ncsxn5BQRvYqKCXRMrDVxcH/?format=pdf&lang=en</a>
+            </div>
+            <div className='mt-4'>
+              <button className='bg-light-blue flex  rounded-4xl py-1 px-5'><img src={instalar} alt="" className='h-6 w-8' /></button>
+            </div>
           </div>
-          <a href="https://www.thieme-connect.com/products/ejournals/pdf/10.1055/s-0038-1623044.pdf">https://www.thieme-connect.com/products/ejournals/pdf/10.1055/s-0038-1623044.pdf</a>
-        </div>
-        <div className='items-center justify-center mt-10 w-xs'>
-          <div className='flex '>
-            <h2 className='font-bold text-lg'>Prosopagnosia após ferimento por arma de fogo</h2>
-            <button className='bg-light-blue w-30 h-8 flex justify-center items-center rounded-4xl mt-4'><img src={instalar} alt="" /></button>
+          <div className='mt-10 dark:text-whiteBg'>
+            <div>
+              <h2 className='font-bold text-lg items-center max-w-md break-words'>Developmental prosopagnosia and adaptative compensatory strategies</h2>
+            </div>
+            <div className='mt-2'>
+              <a href="https://www.scielo.br/j/dn/a/YtwSzRg5bz6VPdWwytJH36C/?format=pdf&lang=en" className='block break-all underline'>https://www.scielo.br/j/dn/a/YtwSzRg5bz6VPdWwytJH36C/?format=pdf&lang=en</a>
+            </div>
+            <div className='mt-4'>
+              <button className='bg-light-blue flex  rounded-4xl py-1 px-5'><img src={instalar} alt="" className='h-6 w-8' /></button>
+            </div>
           </div>
-          <a href="https://www.thieme-connect.com/products/ejournals/pdf/10.1055/s-0038-1623044.pdf">https://www.thieme-connect.com/products/ejournals/pdf/10.1055/s-0038-1623044.pdf</a>
         </div>
       </div>
     </div>
   )
 }
+
