@@ -1,6 +1,5 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { useEffect, useState } from 'react'
 import './index.css'
 import { createBrowserRouter, RouterProvider, Router } from "react-router-dom"
 
@@ -15,6 +14,7 @@ import { Referencias } from './components/Referencias.jsx'
 import { Jogo } from './components/Jogo.jsx'
 import { Conta } from './components/Conta.jsx'
 import { ThemeProvider } from './context/ThemeContext.jsx'
+import { WidthContext } from './context/WidthContext.jsx'
 
 const router = createBrowserRouter([
   {
@@ -60,7 +60,9 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeProvider>
-      <RouterProvider router={router} />
+      <WidthContext>
+        <RouterProvider router={router} />
+      </WidthContext>
     </ThemeProvider>
   </StrictMode>,
 )

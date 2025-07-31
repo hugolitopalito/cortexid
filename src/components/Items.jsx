@@ -1,4 +1,4 @@
-import {Header} from './Header'
+import { Header } from './Header'
 import { imagemData } from '../data/imagemData'
 import { useState } from "react";
 import { useTema } from '../context/ThemeContext';
@@ -27,7 +27,7 @@ export const Items = () => {
   return (
     <div data-theme={tema}>
       <Header />
-      <div className="h-screen flex items-center justify-center dark:bg-purple">
+      <div className="h-screen flex items-center justify-center bg-whiteBg dark:bg-purple">
         <button className='flex h-auto w-auto' onClick={imagemAnterior}>
           <img src={tema == 'dark' ? voltarEsquerdaBranco : voltarEsquerda} alt="" />
         </button>

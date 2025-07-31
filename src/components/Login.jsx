@@ -5,7 +5,7 @@ import senha from '../assets/senha.png'
 
 export const Login = () => {
     return (
-        <div className='flex justify-center items-center h-screen'>
+        <div className='flex justify-center items-center h-screen bg-whiteBg'>
             <div className='bg-blue text-whiteBg rounded-4xl py-10 px-5'>
                 <form className='flex text-center items-center flex-col w-3xs'>
                     <h1 className='text-3xl font-Oswald font-bold'>Login</h1>

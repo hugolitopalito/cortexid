@@ -7,7 +7,7 @@ import confirmacao from '../assets/confirmacao.png'
 
 export const Cadatro = () => {
   return (
-    <div className='flex justify-center items-center h-screen'>
+    <div className='flex justify-center items-center h-screen bg-whiteBg'>
       <div className='bg-blue text-whiteBg rounded-4xl py-10 px-5 '>
         <form className='flex text-center justify-center items-center flex-col w-3xs'>
           <h1 className='text-center text-3xl font-bold font-Oswald'>Cadastre-se</h1>
