@@ -13,6 +13,7 @@ import { Contato } from './components/Contato.jsx'
 import { Referencias } from './components/Referencias.jsx'
 import { Jogo } from './components/Jogo.jsx'
 import { Conta } from './components/Conta.jsx'
+import { CadastroItens } from './components/CadastroItens.jsx'
 import { ThemeProvider } from './context/ThemeContext.jsx'
 import { WidthContext } from './context/WidthContext.jsx'
 
@@ -54,7 +55,10 @@ const router = createBrowserRouter([
     path: 'conta',
     element: <Conta />
   },
-
+  {
+    path: 'cadastroItens',
+    element: <CadastroItens />
+  },
 ])
 
 createRoot(document.getElementById('root')).render(

@@ -6,10 +6,14 @@ import voltarDireita from '../assets/voltarDireita.png'
 import voltarEsquerda from '../assets/voltarEsquerda.png'
 import voltarDireitaBranco from '../assets/voltarDireitaBranco.png'
 import voltarEsquerdaBranco from '../assets/voltarEsquerdaBranco.png'
+import { TabelaItens } from './TabelaItens';
+import { useWidth } from '../context/WidthContext';
 
 export const Items = () => {
 
-  const { tema, alternarTema } = useTema()
+  const {isMobile} = useWidth()
+
+  const { tema } = useTema()
 
   const [indice, setIndice] = useState(0)
 
@@ -40,6 +44,7 @@ export const Items = () => {
           <img src={tema == 'dark' ? voltarDireitaBranco : voltarDireita} alt="" />
         </button>
       </div>
+      {!isMobile && <TabelaItens/>}
     </div>
 
   )
