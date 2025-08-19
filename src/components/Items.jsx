@@ -1,55 +1,77 @@
 import { Header } from './Header';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import { imagemData } from '../data/imagemData';
-import { useState } from 'react';
+import '@splidejs/react-splide/css'; 
+import { items } from '../utils/Items.js';
 import { useTema } from '../context/ThemeContext';
+import { useWidth } from '../context/WidthContext';
+import { useRef } from 'react';
+
+// Importe suas imagens de seta
 import voltarDireita from '../assets/voltarDireita.png';
 import voltarEsquerda from '../assets/voltarEsquerda.png';
 import voltarDireitaBranco from '../assets/voltarDireitaBranco.png';
 import voltarEsquerdaBranco from '../assets/voltarEsquerdaBranco.png';
-import { useWidth } from '../context/WidthContext';
 
 export const Items = () => {
-  const { isMobile } = useWidth();
   const { tema } = useTema();
+  const { isMobile } = useWidth();
+  const splideRef = useRef(null);
 
-  const [indice, setIndice] = useState(0);
-
-  const proximaImagem = () => {
-    setIndice((prev) => (prev + 1) % imagemData.length);
-    console.log('avancei a imagem');
+  const splideOptions = {
+    type: 'loop',
+    perPage: isMobile ? 1 : 3,
+    pagination: true,
+    arrows: false,
+    gap: '2rem',
   };
 
-  const imagemAnterior = () => {
-    setIndice((prev) => (prev - 1 + imagemData.length) % imagemData.length);
-    console.log('voltei a imagem');
+  const handleNext = () => {
+    if (splideRef.current) {
+      splideRef.current.go('>');
+    }
   };
 
-  const imagemAtual = imagemData[indice];
+  const handlePrev = () => {
+    if (splideRef.current) {
+      splideRef.current.go('<');
+    }
+  };
+
   return (
     <div data-theme={tema}>
       <Header />
       <div className="h-screen flex items-center justify-center bg-whiteBg dark:bg-purple">
-        <button className='flex h-auto w-auto cursor-pointer' onClick={imagemAnterior}>
-          <img src={tema === 'dark' ? voltarEsquerdaBranco : voltarEsquerda} alt="" />
+        {/* Botão de voltar */}
+        <button className='h-auto w-auto cursor-pointer p-4' onClick={handlePrev}>
+          <img src={tema === 'dark' ? voltarEsquerdaBranco : voltarEsquerda} alt="Anterior" />
         </button>
-        <div className='w-full relative text-center w-xs items-center justify-center flex flex-col'>
-          <h1 className='py-5 font-bold text-2xl text-dark-blue font-OpenSans dark:text-whiteBg'>{imagemAtual.name}Nome dele</h1>
-          {isMobile ? (
-              <SplideSlide>
-              <img src={imagemAtual.image} className='bg-blue rounded-4xl dark:bg-whiteBg w-xl' alt="" />
+
+        {/* Contêiner do carrossel: Removido o posicionamento absoluto das setas */}
+        <div className='w-full max-w-4xl text-center items-center justify-center'>
+          <Splide options={splideOptions} ref={splideRef}>
+            {items.map((item, index) => (
+              <SplideSlide key={index}>
+                <div className='flex flex-col items-center p-4'>
+                  <h1 className='py-5 font-bold text-2xl text-dark-blue font-OpenSans dark:text-whiteBg'>
+                    {item.name}
+                  </h1>
+                  <img 
+                    src={item.image} 
+                    className='bg-blue rounded-4xl dark:bg-whiteBg h-64 w-auto' 
+                    alt={item.name} 
+                  />
+                  <p className='py-5 font-OpenSans text-xl dark:text-whiteBg'>
+                    R${item.price},00
+                  </p>
+                </div>
               </SplideSlide>
-          ) : (
-            <div className='flex items-center px-0 justify-between'>
-              <SplideSlide>
-              <img src={imagemAtual.image} className='bg-blue rounded-4xl dark:bg-whiteBg w-xl' alt="" />
-              </SplideSlide>
-            </div>
-          )}
-          <p className='py-5 font-OpenSans text-xl dark:text-whiteBg'>R${imagemAtual.price},00</p>
+            ))}
+          </Splide>
         </div>
-        <button className='h-auto w-auto cursor-pointer' onClick={proximaImagem}>
-          <img src={tema === 'dark' ? voltarDireitaBranco : voltarDireita} alt="" />
+
+        {/* Botão de avançar */}
+        <button className='h-auto w-auto cursor-pointer p-4' onClick={handleNext}>
+          <img src={tema === 'dark' ? voltarDireitaBranco : voltarDireita} alt="Próximo" />
         </button>
       </div>
     </div>
