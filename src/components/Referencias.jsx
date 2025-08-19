@@ -20,7 +20,7 @@ export const Referencias = () => {
                 <a href="https://www.thieme-connect.com/products/ejournals/pdf/10.1055/s-0038-1623044.pdf" className='block break-all underline cursor-pointer'>https://www.thieme-connect.com/products/ejournals/pdf/10.1055/s-0038-1623044.pdf</a>
               </div>
               <div className='mt-4 '>
-                <button className='bg-light-blue flex rounded-4xl py-1 px-5 md:py-2 md:px-10 cursor-pointer'><img src={instalar} alt="" className='h-6 w-8' /></button>
+              <a href="../../../public/ArmaDeFogo.pdf" download ><button className='bg-light-blue flex  rounded-4xl py-1 px-5 md:py-2 md:px-10 cursor-pointer' ><img src={instalar} alt="" className='h-6 w-8' /></button></a>
               </div>
             </div>
             <div className='mt-10 dark:text-whiteBg md:flex md:justify-between'>
@@ -29,7 +29,7 @@ export const Referencias = () => {
                 <a href="https://www.scielo.br/j/dn/a/Ncsxn5BQRvYqKCXRMrDVxcH/?format=pdf&lang=en" className='block break-all underline cursor-pointer'>https://www.scielo.br/j/dn/a/Ncsxn5BQRvYqKCXRMrDVxcH/?format=pdf&lang=en</a>
               </div>
               <div className='mt-4'>
-                <button className='bg-light-blue flex  rounded-4xl py-1 px-5 md:py-2 md:px-10 cursor-pointer'><img src={instalar} alt="" className='h-6 w-8' /></button>
+              <a href="../../../public/Adquirida.pdf" download ><button className='bg-light-blue flex  rounded-4xl py-1 px-5 md:py-2 md:px-10 cursor-pointer' ><img src={instalar} alt="" className='h-6 w-8' /></button></a>
               </div>
             </div>
             <div className='mt-10 dark:text-whiteBg md:flex md:justify-between'>
@@ -38,7 +38,7 @@ export const Referencias = () => {
                 <a href="https://www.scielo.br/j/dn/a/YtwSzRg5bz6VPdWwytJH36C/?format=pdf&lang=en" className='block break-all underline cursor-pointer'>https://www.scielo.br/j/dn/a/YtwSzRg5bz6VPdWwytJH36C/?format=pdf&lang=en</a>
               </div>
               <div className='mt-4'>
-                <button className='bg-light-blue flex  rounded-4xl py-1 px-5 md:py-2 md:px-10 cursor-pointer'><img src={instalar} alt="" className='h-6 w-8' /></button>
+                <a href="../../../public/Desenvolvida.pdf" download ><button className='bg-light-blue flex  rounded-4xl py-1 px-5 md:py-2 md:px-10 cursor-pointer' ><img src={instalar} alt="" className='h-6 w-8' /></button></a>
               </div>
             </div>
           </div>

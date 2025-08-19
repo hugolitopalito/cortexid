@@ -24,7 +24,7 @@ export const HomeMain = () => {
                     </div>
                     <div className='flex justify-center pt-10 md:items-start md:justify-start '>
                         <button className='font-OpenSans font-bold  bg-blue rounded-full w-3xs p-2 dark:bg-light-blue md:p-4 md:w-2xs'>
-                            <Link to="/login" className='text-white text-center text-2xl md:text-3xl'>Saiba Mais</Link>
+                            <Link className='text-white text-center text-2xl md:text-3xl'>Saiba Mais</Link>
                         </button>
                     </div>
                 </div>

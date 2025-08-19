@@ -37,7 +37,6 @@ export const Header = () => {
           <NavLink to='/contato' className={({isActive})=>isActive ? 'text-blue dark:text-light-blue' : 'dark:text-whiteBg'}><span>Contato</span></NavLink>
           <NavLink to='/referencias' className={({isActive})=>isActive ? 'text-blue dark:text-light-blue' : 'dark:text-whiteBg'}><span>Referência</span></NavLink>
           <NavLink to='/jogo' className={({isActive})=>isActive ? 'text-blue dark:text-light-blue' : 'dark:text-whiteBg'}><span>Jogo</span></NavLink>
-          <NavLink to='/conta' className={({isActive})=>isActive ? 'text-blue dark:text-light-blue' : 'dark:text-whiteBg'}><span>Conta</span></NavLink>
          </div>
           <img className='object-contain h-20 w-25 cursor-pointer' src={tema == 'dark' ? modoEscuroMobile : modoClaroMobile} alt="botão de alterar tema" onClick={alternarTema} />
         </div>}
@@ -57,7 +56,6 @@ export const Header = () => {
           <NavLink to='/contato' className={({isActive})=>isActive ? 'text-light-blue dark:text-blue' : 'dark:text-whiteBg'}><span>Contato</span></NavLink>
           <NavLink to='/referencias' className={({isActive})=>isActive ? 'text-light-blue dark:text-blue' : 'dark:text-whiteBg'}><span>Referência</span></NavLink>
           <NavLink to='/jogo' className={({isActive})=>isActive ? 'text-light-blue dark:text-blue' : 'dark:text-whiteBg'}><span>Jogo</span></NavLink>
-          <NavLink to='/conta' className={({isActive})=>isActive ? 'text-light-blue dark:text-blue' : 'dark:text-whiteBg'}><span>Conta</span></NavLink>
         </div>
       </div>}
     </div>
