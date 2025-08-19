@@ -4,6 +4,7 @@ import Instagram from '../assets/Instagram.png'
 import LinkedinBranco from '../assets/LinkedinBranco.png'
 import InstagramBranco from '../assets/instagramBranco.png'
 import GithubBranco from '../assets/GithubBranco.png'
+import EuEManoPlipo from '../assets/EuEManoPlipo.jpeg'
 import { Header } from './Header'
 import { useTema } from '../context/ThemeContext'
 
@@ -15,8 +16,8 @@ export const Contato = () => {
             <Header />
             <div className='md:h-screen md:flex md:items-center md:justify-between md:px-20'>
                 <div className='flex items-center justify-center flex-col pt-15 md:pt-0'>
-                    <div className='bg-light-blue h-50 rounded-full w-55 mt-8 dark:bg-whiteBg md:mt-0'>
-                        <img src="#" alt="" />
+                    <div className='mt-8 md:mt-0'>
+                        <img src={EuEManoPlipo} alt="" className='object-fill rounded-full w-55 h-50'/>
                     </div>
                     <div className='pt-10 '>
                         <span className='text-4xl font-Oswald font-bold text-blue dark:text-whiteBg'>Hugo Santos</span>
@@ -28,8 +29,8 @@ export const Contato = () => {
                     </div>
                 </div>
                 <div className='flex items-center justify-center flex-col pt-5 dark:bg-purple md:pt-0'>
-                    <div className='bg-light-blue h-50 rounded-full w-55 mt-8 dark:bg-whiteBg md:mt-0'>
-                        <img src="#" alt="" />
+                    <div className='mt-8 md:mt-0'>
+                        <img src="#" alt="" className='object-fill rounded-full w-55 h-50'/>
                     </div>
                     <div className='pt-10'>
                         <span className='text-4xl font-Oswald font-bold text-blue dark:text-whiteBg'>Letícia Matos</span>
@@ -41,8 +42,8 @@ export const Contato = () => {
                     </div>
                 </div>
                 <div className='flex items-center justify-center flex-col pt-5 dark:bg-purple md:pt-3'>
-                    <div className='bg-light-blue h-50 rounded-full w-55 mt-8 dark:bg-whiteBg md:mt-0'>
-                        <img src="#" alt="" />
+                    <div className='mt-8 md:mt-0'>
+                        <img src="#" alt="" className='object-fill rounded-full w-55 h-50'/>
                     </div>
                     <div className='pt-10'>
                         <span className='text-4xl font-Oswald font-bold text-blue dark:text-whiteBg'>Maria Heloisa</span>
