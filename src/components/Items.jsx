@@ -52,11 +52,13 @@ export const Items = () => {
                   <h1 className="py-5 font-bold text-2xl text-dark-blue font-OpenSans dark:text-whiteBg">
                     {item.name}
                   </h1>
-                  <img 
+                 <div className='bg-blue rounded-4xl w-3xs flex items-center justify-center'>
+                 <img 
                     src={item.image} 
-                    className="bg-blue rounded-4xl dark:bg-whiteBg h-64 w-auto" 
+                    className="dark:bg-whiteBg h-64" 
                     alt={item.name} 
                   />
+                 </div>
                   <p className="py-5 font-OpenSans text-xl dark:text-whiteBg">
                     R${item.price},00
                   </p>

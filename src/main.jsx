@@ -12,6 +12,7 @@ import { Referencias } from './components/Referencias.jsx'
 import { Jogo } from './components/Jogo.jsx'
 import { ThemeProvider } from './context/ThemeContext.jsx'
 import { WidthContext } from './context/WidthContext.jsx'
+import { Curiosity } from './components/Curiosity.jsx'
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: 'jogo',
     element: <Jogo />
+  },
+  {
+    path: 'curiosidade',
+    element: <Curiosity />
   },
 ])
 

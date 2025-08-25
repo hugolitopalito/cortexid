@@ -32,7 +32,7 @@ export const Header = () => {
           <img className='py-3 cursor-pointer' src={tema == 'dark' ? hamburguerBranco : hamburguer} alt="ícone de mais opções" onClick={Menu} />
         </button> : <div className='flex items-center gap-30 justify-between'>
          <div className='flex gap-20 font-bold text-2xl font-OpenSans'>
-         <NavLink to="/itens" className={({isActive})=>isActive ? 'text-blue dark:text-light-blue' : 'dark:text-whiteBg'}><span>Items</span></NavLink>
+         <NavLink to="/itens" className={({isActive})=>isActive ? 'text-blue dark:text-light-blue' : 'dark:text-whiteBg'}><span>Itens</span></NavLink>
           <NavLink to='/tutorial' className={({isActive})=>isActive ? 'text-blue dark:text-light-blue' : 'dark:text-whiteBg'}> <span>Tutorial</span></NavLink>
           <NavLink to='/contato' className={({isActive})=>isActive ? 'text-blue dark:text-light-blue' : 'dark:text-whiteBg'}><span>Contato</span></NavLink>
           <NavLink to='/referencias' className={({isActive})=>isActive ? 'text-blue dark:text-light-blue' : 'dark:text-whiteBg'}><span>Referência</span></NavLink>
@@ -51,7 +51,7 @@ export const Header = () => {
           </button>
         </div>
         <div className='flex flex-col text-whiteBg gap-10 text-Open Sans font-bold px-5 text-xl'>
-          <NavLink to="/itens" className={({isActive})=>isActive ? 'text-light-blue dark:text-blue' : 'dark:text-whiteBg'}><span>Items</span></NavLink>
+          <NavLink to="/itens" className={({isActive})=>isActive ? 'text-light-blue dark:text-blue' : 'dark:text-whiteBg'}><span>Itens</span></NavLink>
           <NavLink to='/tutorial'className={({isActive})=>isActive ? 'text-light-blue dark:text-blue' : 'dark:text-whiteBg'}> <span>Tutorial</span></NavLink>
           <NavLink to='/contato' className={({isActive})=>isActive ? 'text-light-blue dark:text-blue' : 'dark:text-whiteBg'}><span>Contato</span></NavLink>
           <NavLink to='/referencias' className={({isActive})=>isActive ? 'text-light-blue dark:text-blue' : 'dark:text-whiteBg'}><span>Referência</span></NavLink>
