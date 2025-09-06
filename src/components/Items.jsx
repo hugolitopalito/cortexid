@@ -40,9 +40,9 @@ export const Items = () => {
     <div data-theme={tema}>
       <Header />
       <div className="h-screen flex items-center justify-center bg-whiteBg dark:bg-purple">
-        <button className="h-auto w-auto cursor-pointer p-4" onClick={handlePrev}>
+        {isMobile == false ? <button className="h-auto w-auto cursor-pointer p-4" onClick={handlePrev}>
           <img src={tema === 'dark' ? voltarEsquerdaBranco : voltarEsquerda} alt="Anterior" />
-        </button>
+        </button> : ''}
 
         <div className="w-full max-w-4xl text-center items-center justify-center">
           <Splide options={splideOptions} ref={splideRef}>
@@ -52,10 +52,10 @@ export const Items = () => {
                   <h1 className="py-5 font-bold text-2xl text-dark-blue font-OpenSans dark:text-whiteBg">
                     {item.name}
                   </h1>
-                 <div className='bg-blue rounded-4xl w-3xs flex items-center justify-center'>
+                 <div className='bg-blue rounded-4xl w-3xs flex items-center justify-center dark:bg-whiteBg '>
                  <img 
                     src={item.image} 
-                    className="dark:bg-whiteBg h-64" 
+                    className="h-64" 
                     alt={item.name} 
                   />
                  </div>
@@ -68,9 +68,9 @@ export const Items = () => {
           </Splide>
         </div>
 
-        <button className="h-auto w-auto cursor-pointer p-4" onClick={handleNext}>
+       {isMobile == false ? <button className="h-auto w-auto cursor-pointer p-4" onClick={handleNext}>
           <img src={tema === 'dark' ? voltarDireitaBranco : voltarDireita} alt="Próximo" />
-        </button>
+        </button> : ''}
       </div>
     </div>
   );

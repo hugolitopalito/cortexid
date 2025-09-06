@@ -9,15 +9,15 @@ export const Curiosity = () => {
   return (
     <div data-theme={tema}>
       <Header />
-      <div className='bg-whiteBg dark:bg-purple h-screen pt-20'>
-        <div className='font-Roboto flex flex-col items-center justify-center gap-4 text-justify'>
+      <div className='bg-whiteBg dark:bg-purple pt-20 md:pt-0'>
+        <div className='font-Roboto flex flex-col items-center justify-center gap-4 text-justify h-screen '>
           <div>
-            <h1 className='font-bold font-OpenSans text-4xl md:pt-15 md:text-5xl'>
+            <h1 className='font-bold font-OpenSans text-4xl md:pt-5 md:text-5xl dark:text-whiteBg'>
               Curiosidades
             </h1>
           </div>
           <div className='md:flex md:gap-40 md:pt-15 ' >
-            <div className='flex flex-col items-center gap-3 w-xs font-Roboto md:text-xl font-Roboto md:w-3xl'>
+            <div className='flex flex-col items-center gap-3 w-xs font-Roboto md:text-xl font-Roboto md:w-3xl dark:text-whiteBg'>
               <p >
                 Prosopagnosia consiste em uma desordem neurológica em que o indivíduo perde a capacidade de reconhecer faces, sem reconhecer a fisionomia das pessoas, e até mesmo do seu próprio rosto, até que outro estímulo (como o sonoro, pela voz) seja identificado.
               </p>
@@ -29,7 +29,7 @@ export const Curiosity = () => {
               </p>
             </div>
             <div className='flex items-center justify-center'>
-              <iframe className='h-45 rounded-3xl mt-5 md:mt-0 md:h-95 md:w-2xl' src="https://www.youtube.com/embed/c8rgT7UU2tM?si=nWQRBWTJwdNkQWhL&amp;start=53" frameBorder="0" ></iframe>
+              <iframe className='h-45 rounded-3xl mt-5 md:mt-0 md:h-95 md:w-2xl' src="https://www.youtube.com/embed/DrU-1ts-DZA?si=IrEFKrCBKHW7OLQp&amp;start=50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </div>
         </div>

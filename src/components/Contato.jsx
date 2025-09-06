@@ -5,6 +5,8 @@ import LinkedinBranco from '../assets/LinkedinBranco.png'
 import InstagramBranco from '../assets/instagramBranco.png'
 import GithubBranco from '../assets/GithubBranco.png'
 import EuEManoPlipo from '../assets/EuEManoPlipo.jpeg'
+import prima from '../assets/prima.JPG'
+import miga from '../assets/miga.JPG'
 import { Header } from './Header'
 import { useTema } from '../context/ThemeContext'
 
@@ -23,35 +25,35 @@ export const Contato = () => {
                         <span className='text-4xl font-Oswald font-bold text-blue dark:text-whiteBg'>Hugo Santos</span>
                     </div>
                     <div className='w-xs px-3 flex flex-col justify-start'>
-                        <a href="" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={InstagramBranco} alt="" className='h-15 w-15'/> : <img src={Instagram} alt="" className='h-15 w-15' />}<span>hugolitopalito</span></a>
-                        <a href="" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={LinkedinBranco} alt="" className='h-15 w-15'/> : <img src={Linkedin} alt="" className='h-15 w-15' />}<span>Hugo Santos</span></a>
-                        <a href="" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={GithubBranco} alt="" className='h-15 w-15'/> : <img src={Github} alt="" className='h-15 w-15' />}<span>hugolitopalito</span></a>
+                        <a target="_blank" href="https://www.instagram.com/hugolitopalito?igsh=cnNkYnl2aXB4bDJr&utm_source=qr" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={InstagramBranco} alt="" className='h-15 w-15'/> : <img src={Instagram} alt="" className='h-15 w-15' />}<span>hugolitopalito</span></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/hugo-santos-5b2561334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={LinkedinBranco} alt="" className='h-15 w-15'/> : <img src={Linkedin} alt="" className='h-15 w-15' />}<span>Hugo Santos</span></a>
+                        <a target="_blank" href="https://github.com/hugolitopalito?tab=repositories" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={GithubBranco} alt="" className='h-15 w-15'/> : <img src={Github} alt="" className='h-15 w-15' />}<span>hugolitopalito</span></a>
                     </div>
                 </div>
                 <div className='flex items-center justify-center flex-col pt-5 dark:bg-purple md:pt-0'>
                     <div className='mt-8 md:mt-0'>
-                        <img src="#" alt="" className='object-fill rounded-full w-55 h-50'/>
+                        <img src={miga} alt="" className='object-fill rounded-full w-55 h-50'/>
                     </div>
                     <div className='pt-10'>
                         <span className='text-4xl font-Oswald font-bold text-blue dark:text-whiteBg'>Letícia Matos</span>
                     </div>
                     <div className='w-xs flex flex-col justify-start px-3'>
-                        <a href="" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={InstagramBranco} alt="" className='h-15 w-15'/> : <img src={Instagram} alt="" className='h-15 w-15' />}<span>leeticia_matoos</span></a>
-                        <a href="" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={LinkedinBranco} alt="" className='h-15 w-15'/> : <img src={Linkedin} alt="" className='h-15 w-15' />}<span>Leticia Matos</span></a>
-                        <a href="" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={GithubBranco} alt="" className='h-15 w-15'/> : <img src={Github} alt="" className='h-15 w-15' />}<span>lelematos</span></a>
+                        <a target="_blank" href="https://www.instagram.com/leeticia_matoos?igsh=MW15NGFsbm16dnFwdg==" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={InstagramBranco} alt="" className='h-15 w-15'/> : <img src={Instagram} alt="" className='h-15 w-15' />}<span>leeticia_matoos</span></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/leticia-matos-06ab79335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={LinkedinBranco} alt="" className='h-15 w-15'/> : <img src={Linkedin} alt="" className='h-15 w-15' />}<span>Leticia Matos</span></a>
+                        <a target="_blank" href="https://github.com" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={GithubBranco} alt="" className='h-15 w-15'/> : <img src={Github} alt="" className='h-15 w-15' />}<span>lelematos</span></a>
                     </div>
                 </div>
                 <div className='flex items-center justify-center flex-col pt-5 dark:bg-purple md:pt-3'>
                     <div className='mt-8 md:mt-0'>
-                        <img src="#" alt="" className='object-fill rounded-full w-55 h-50'/>
+                        <img src={prima} alt="" className='object-fill rounded-full w-55 h-50'/>
                     </div>
                     <div className='pt-10'>
                         <span className='text-4xl font-Oswald font-bold text-blue dark:text-whiteBg'>Maria Heloisa</span>
                     </div>
                     <div className='w-xs flex flex-col justify-start px-3'>
-                        <a href="" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={InstagramBranco} alt="" className='h-15 w-15'/> : <img src={Instagram} alt="" className='h-15 w-15' />}<span>marihlss</span></a>
-                        <a href="" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={LinkedinBranco} alt="" className='h-15 w-15'/> : <img src={Linkedin} alt="" className='h-15 w-15' />}<span>Maria Heloisa Seco</span></a>
-                        <a href="" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={GithubBranco} alt="" className='h-15 w-15'/> : <img src={Github} alt="" className='h-15 w-15' />}<span>kworitos</span></a>
+                        <a target="_blank" href="https://www.instagram.com/marihlss?igsh=MWg0cGpyZG03aHFpYg==" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={InstagramBranco} alt="" className='h-15 w-15'/> : <img src={Instagram} alt="" className='h-15 w-15' />}<span>marihlss</span></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/maria-heloisa-seco-b06b75335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={LinkedinBranco} alt="" className='h-15 w-15'/> : <img src={Linkedin} alt="" className='h-15 w-15' />}<span>Maria Heloisa Seco</span></a>
+                        <a target="_blank" href="https://github.com/kworitos" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={GithubBranco} alt="" className='h-15 w-15'/> : <img src={Github} alt="" className='h-15 w-15' />}<span>kworitos</span></a>
                     </div>
                 </div>
             </div>

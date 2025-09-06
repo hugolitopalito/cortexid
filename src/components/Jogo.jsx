@@ -22,7 +22,7 @@ export const Jogo = () => {
               Colete itens especiais para montar o chapéu mais incrível de todos!</p>
           </div>
           <div className='md:pt-30'>
-            <iframe className='objetc-fill max-w-xm min-h-50 rounded-3xl mt-3 md:w-2xl md:min-h-90' src="https://www.youtube.com/embed/c8rgT7UU2tM?si=nWQRBWTJwdNkQWhL&amp;start=53" frameBorder="0" ></iframe>
+          <iframe className='objetc-fill max-w-xm min-h-50 rounded-3xl mt-3 md:w-2xl md:min-h-90' src="https://www.youtube.com/embed/gFEj54TF_fc?si=snX4qNUSXRmIwffp&amp;start=60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             {isMobile == true ? <a className='flex items-center justify-center gap-4 text-whiteBg text-3xl bg-blue rounded-4xl px-10 py-3 mt-10 dark:bg-light-blue' href="https://www.google.com/?hl=pt_BR">Jogar <img src={jogar} alt="" /></a> :
              <div className='flex items-center justify-center'><a className='flex items-center justify-center gap-4 text-whiteBg text-3xl bg-blue rounded-4xl px-15 py-3 mt-10 dark:bg-light-blue' href="https://www.google.com/?hl=pt_BR">Jogar <img src={jogar} alt="" /></a></div>}
           </div>
@@ -31,3 +31,4 @@ export const Jogo = () => {
     </div>
   )
 }
+

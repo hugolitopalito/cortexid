@@ -35,7 +35,7 @@ export const Tutorial = () => {
                         <p className='text-left font-Roboto md:text-xl'>Para sair do modo de reconhecimento, clique em Streaming (se necessário).</p>
                     </div>
                 </div>
-                <iframe className='h-45 rounded-3xl mt-5 md:mt-0 md:h-95 md:w-[45%]' src="https://www.youtube.com/embed/c8rgT7UU2tM?si=nWQRBWTJwdNkQWhL&amp;start=53" frameBorder="0" ></iframe>
+                <iframe className='h-45 rounded-3xl mt-5 md:mt-0 md:h-95 md:w-[45%]' src="https://www.youtube.com/embed/gFEj54TF_fc?si=snX4qNUSXRmIwffp&amp;start=60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     )
