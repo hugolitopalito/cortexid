@@ -40,7 +40,7 @@ export const Contato = () => {
                     <div className='w-xs flex flex-col justify-start px-3'>
                         <a target="_blank" href="https://www.instagram.com/leeticia_matoos?igsh=MW15NGFsbm16dnFwdg==" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={InstagramBranco} alt="" className='h-15 w-15'/> : <img src={Instagram} alt="" className='h-15 w-15' />}<span>leeticia_matoos</span></a>
                         <a target="_blank" href="https://www.linkedin.com/in/leticia-matos-06ab79335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={LinkedinBranco} alt="" className='h-15 w-15'/> : <img src={Linkedin} alt="" className='h-15 w-15' />}<span>Leticia Matos</span></a>
-                        <a target="_blank" href="https://github.com" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={GithubBranco} alt="" className='h-15 w-15'/> : <img src={Github} alt="" className='h-15 w-15' />}<span>lelematos</span></a>
+                        <a target="_blank" href="https://github.com/llelematos" className='text-blue text-3xl flex items-center gap-5 font-bold dark:text-whiteBg pt-10'>{tema === 'dark' ? <img src={GithubBranco} alt="" className='h-15 w-15'/> : <img src={Github} alt="" className='h-15 w-15' />}<span>lelematos</span></a>
                     </div>
                 </div>
                 <div className='flex items-center justify-center flex-col pt-5 dark:bg-purple md:pt-3'>
